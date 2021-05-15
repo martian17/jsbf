@@ -1,6 +1,6 @@
 {
   "name": "@martian17/fuckjs",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "This is a nodejs module that lets you execute brainfuck natively in your main .js file.",
   "main": "fuck.js",
   "scripts": {
