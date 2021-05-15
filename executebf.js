@@ -2,8 +2,14 @@
 
 var executebf = function(bf){
     var out = "";
-    var hexs = "0123456789ABCDEF";
-    
+    var hexchars = "0123456789ABCDEF";
+    var hexs = [];
+    for(var i = 0; i < 16; i++){
+	for(var j = 0; j < 16; j++){
+	    hexs[i*16+j] = hexchars[i]+hexchars[j];
+	}
+    }
+
     var stack = [0];//default 0
     var pc = 0;
     var ptr = 0;
@@ -25,13 +31,13 @@ var executebf = function(bf){
             }
             break;
             case "+":
-            stack[ptr] = (stack[ptr]+1)&15;
+            stack[ptr] = (stack[ptr]+1)&255;
             break;
             case "-":
-            stack[ptr] = (stack[ptr]+15)&15;
+            stack[ptr] = (stack[ptr]+255)&255;
             break;
             case ".":
-            out += hexs[stack[ptr]];
+            out += hexs[stack[ptr]]+" ";
             break;
             case ",":
             

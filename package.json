@@ -1,11 +1,22 @@
 {
-  "name": "fuckjs",
+  "name": "@martian17/fuckjs",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a nodejs module that lets you execute brainfuck natively in your main .js file.",
   "main": "fuck.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "martian17",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martian17/jsbf.git"
+  },
+  "keywords": [
+    "brainfuck"
+  ],
+  "bugs": {
+    "url": "https://github.com/martian17/jsbf/issues"
+  },
+  "homepage": "https://github.com/martian17/jsbf#readme"
 }
