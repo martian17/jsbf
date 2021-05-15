@@ -55,7 +55,7 @@ require("./fuck.js");
         # fF r FP 0
         #      ^
         ## insert the comparison code here
-        ## c == 0 iff P>F
+        ## c == 0 iff P)F
 	# fF r c
         #      ^
 	<+> # increment r
