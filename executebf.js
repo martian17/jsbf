@@ -37,10 +37,12 @@ var executebf = function(bf){
             stack[ptr] = (stack[ptr]+255)&255;
             break;
             case ".":
-            out += hexs[stack[ptr]]+" ";
+            console.log(stack[ptr]);
+	    out += hexs[stack[ptr]]+" ";
             break;
             case ",":
-            
+            console.log(stack,ptr);
+	    return false;
             break;
             case "[":
             if(stack[ptr] === 0){

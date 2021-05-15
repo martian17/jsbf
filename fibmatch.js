@@ -2,6 +2,8 @@ require("./fuck.js");
 
 
 
+//# assembled program
+
 
 
 /*
@@ -26,7 +28,7 @@ require("./fuck.js");
     >>[-<<+>>]
     # FF' r 0
     #       ^
-
+    
     # first task is the catching up of root to fib2
     # resulting state from this code block will result in output like the following
     ## fF r' 0
@@ -40,16 +42,16 @@ require("./fuck.js");
     [
         # fF r 1
         #      ^
-	-
-	<[->+>+>+<<<]
-	>[-<+>]>
+        -
+        <[->+>+>+<<<]
+        >[-<+>]>
         # fF r 0 rr
         #        ^
         ## insert multiplication code here
-	# fF r 0 P
+        # fF r 0 P
         #        ^
-	<<<[->>+>>+<<<<]
-	>>>>[-<<<<+>>>>]<<
+        <<<[->>+>>+<<<<]
+        >>>>[-<<<<+>>>>]<<
         # fF r FP 0
         #      ^
         ## insert the comparison code here
@@ -79,6 +81,33 @@ require("./fuck.js");
 ]
 <<.
 */
+
+
+/*
++++>+++++<
+
+# multiplication code
+[->>+<<]
+# 0ab0
+# ^
+>[-
+>[->+<<<+>>]
+# ba0b
+#   ^
+>[-<+>]
+# bab0
+#    ^
+<<
+]
+# p0b0
+#  ^
+>[-]
+<<
+# p000
+# ^
+,
+*/
+
 
 
 
