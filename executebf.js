@@ -26,7 +26,7 @@ var executebf = function(bf){
             case "<":
             ptr--;
             if(ptr < 0){
-                console.log("error, buffer overflow, check y' code. pointer smaller than 0");
+                console.log("\u001b[0merror, buffer overflow, check y' code. pointer smaller than 0");
                 return false;
             }
             break;
@@ -37,7 +37,7 @@ var executebf = function(bf){
             stack[ptr] = (stack[ptr]+255)&255;
             break;
             case ".":
-            console.log(stack[ptr]);
+            console.log(stack[ptr]+"");
 	    out += hexs[stack[ptr]]+" ";
             break;
             case ",":
@@ -51,7 +51,7 @@ var executebf = function(bf){
                     pc++;
                     if(openparens === 0 && bf[pc] === "]")break;
                     if(pc >= bf.length){
-                        console.log("buffer overflow, program counter larger than the program");
+                        console.log("\u001b[0mbuffer overflow, program counter larger than the program");
                         return false;
                     }
                     if(bf[pc] === "["){
@@ -69,7 +69,7 @@ var executebf = function(bf){
                     pc--;
                     if(openparens === 0 && bf[pc] === "[")break;
                     if(pc < 0){
-                        console.log("buffer overflow, program counter lower than 0");
+                        console.log("\u001b[0mbuffer overflow, program counter lower than 0");
                         return false;
                     }
                     if(bf[pc] === "]"){
@@ -83,7 +83,7 @@ var executebf = function(bf){
         }
         pc++;
         if(pc >= bf.length){
-            console.log("execution success, returning");
+            console.log("\u001b[0mexecution success, returning");
             break;
         }
     }

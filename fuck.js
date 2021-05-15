@@ -11,7 +11,9 @@ fs.readFile(process.argv[1], 'utf8', function(err, data) {
     }
     program = program.replace(/#[^\n]*/g,"\n").replace(/[^\<\>\+\-\.\,\[\]]/g,"");
     console.log("executing the bf program: "+program);
+    console.log("raw output (in decimal):"+"\u001b[33m");
     var result = executebf(program);
-    console.log("result: "+result);
+    console.log("\u001b[0"+"mresult (in hex):");
+    console.log("\u001b[33m"+result+"\u001b[0m");
 });
 
