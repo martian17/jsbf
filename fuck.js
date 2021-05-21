@@ -17,3 +17,4 @@ fs.readFile(process.argv[1], 'utf8', function(err, data) {
     console.log("\u001b[33m"+result+"\u001b[0m");
 });
 
+module.exports = executebf;
