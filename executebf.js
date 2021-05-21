@@ -42,7 +42,7 @@ var executebf = function(bf){
             break;
             case ",":
             console.log(stack,ptr);
-	    return false;
+	    return [stack,ptr];
             break;
             case "[":
             if(stack[ptr] === 0){
